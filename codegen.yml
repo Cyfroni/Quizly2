@@ -1,0 +1,9 @@
+# codegen.yml
+
+schema: ${VITE_GRAPHQL_URL}
+documents: "src/**/*.tsx"
+generates:
+  ./src/__generated__/:
+    preset: "client"
+    presetConfig:
+      gqlTagName: "gql"
